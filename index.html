@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VerdisS Productions</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0f13;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at top,#22c55e20 0%,transparent 50%),
+        radial-gradient(circle at bottom,#0ea5e920 0%,transparent 50%);
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:42px 42px;
+    mask-image:linear-gradient(to bottom,black,transparent);
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(11,15,19,.7);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+    color:#4ade80;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.25s;
+}
+
+nav a:hover{
+    color:#4ade80;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:0 25px;
+}
+
+.hero h1{
+    font-size:4.8rem;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#4ade80;
+}
+
+.hero p{
+    max-width:720px;
+    margin:auto;
+    line-height:1.8;
+    color:#cbd5e1;
+    font-size:1.15rem;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.button{
+    display:inline-block;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:999px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(34,197,94,.35);
+}
+
+section{
+    padding:110px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(14px);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#22c55e;
+}
+
+.card h3{
+    color:#4ade80;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#d1d5db;
+    line-height:1.8;
+}
+
+.roadmap ul{
+    list-style:none;
+    max-width:700px;
+    margin:auto;
+}
+
+.roadmap li{
+    padding:16px;
+    margin:12px 0;
+    background:rgba(255,255,255,.05);
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#94a3b8;
+}
+
+footer h3{
+    color:#4ade80;
+    margin-bottom:10px;
+}
+
+@media(max-width:700px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🌱 VerdisS</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Building <span>Sustainable</span> Technology.</h1>
+
+<p>
+VerdisS Productions is an independent open-source software initiative focused on building lightweight, privacy-respecting and environmentally conscious technology.
+</p>
+
+<div class="buttons">
+<a class="button" href="#projects">Explore</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About VerdisS</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🌱 Our Mission</h3>
+
+<p>
+Create software that is efficient, sustainable and accessible for everyone while respecting user privacy and reducing unnecessary resource consumption.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💚 Open Source</h3>
+
+<p>
+VerdisS believes in transparent development. Projects are built openly so anyone can learn, contribute and help improve them.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Current Project</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🌍 EcoMap</h3>
+
+<p>
+EcoMap is the first official project of the VerdisS Ecosystem. It is a collaborative platform that helps communities report, locate and monitor environmental issues, encouraging collective action for a cleaner planet.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="roadmap" class="roadmap">
+
+<h2 class="title">Roadmap</h2>
+
+<ul>
+
+<li>
+    ✅ <a href="https://ecomap-e7268.web.app/" target="_blank" rel="noopener noreferrer">
+        EcoMap
+    </a> — Available
+</li>
+
+<li>🟢 Verdis Browser — Planned</li>
+
+<li>🔎 Verdis Search — Planned</li>
+
+<li>🤖 Verdis AI — Planned</li>
+
+<li>☁️ Verdis Drive — Planned</li>
+
+</ul>
+
+</section>
+
+<footer>
+
+<h3>🌱 VerdisS Productions</h3>
+
+<p>
+Building technology for a greener future.
+</p>
+
+<br>
+
+<p>
+Licensed under the Apache License 2.0
+</p>
+
+<p>
+© 2026 VerdisS Productions
+</p>
+
+</footer>
+
+</body>
+</html>
