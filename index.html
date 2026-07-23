@@ -3,20 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>VerdisS Productions</title>
+<title>VerdisS Productions — Fluent Ecosystem</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 <style>
+/* ==========================================================================
+   Microsoft Fluent Design Tokens & Base Styles (No MS Logos)
+   ========================================================================== */
+:root {
+    --ms-blue: #0078d4;
+    --ms-blue-hover: #106ebe;
+    --ms-blue-light: #4cc2ff;
+    --verdiss-green: #22c55e;
+    --verdiss-green-light: #4ade80;
+    
+    --bg-dark: #121519;
+    --bg-card: rgba(32, 37, 45, 0.7);
+    --bg-card-hover: rgba(42, 48, 58, 0.85);
+    --bg-acrylic: rgba(20, 24, 30, 0.75);
+    
+    --border-fluent: rgba(255, 255, 255, 0.08);
+    --border-fluent-active: rgba(76, 194, 255, 0.4);
+    
+    --text-primary: #fcfcfc;
+    --text-secondary: #adbac7;
+    --text-muted: #768390;
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    --shadow-fluent: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --shadow-glow: 0 0 25px rgba(0, 120, 212, 0.25);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 
 html {
@@ -24,224 +52,497 @@ html {
 }
 
 body {
-    background: #0b0f13;
-    color: #fff;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
-body::before {
-    content: "";
+/* Background Fluent Glows */
+.ambient-glow {
     position: fixed;
     inset: 0;
-    background:
-        radial-gradient(circle at top, #22c55e20 0%, transparent 50%),
-        radial-gradient(circle at bottom, #0ea5e920 0%, transparent 50%);
     z-index: -2;
+    pointer-events: none;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 80% 60%, rgba(0, 120, 212, 0.12) 0%, transparent 45%);
 }
 
-body::after {
-    content: "";
+.grid-overlay {
     position: fixed;
     inset: 0;
-    background-image:
-        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-    background-size: 42px 42px;
-    mask-image: linear-gradient(to bottom, black, transparent);
     z-index: -1;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
 }
 
+/* Navigation Bar */
 nav {
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background: rgba(11, 15, 19, .7);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    padding: 0 8%;
+    background: var(--bg-acrylic);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border-bottom: 1px solid var(--border-fluent);
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #4ade80;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.brand-icon {
+    font-size: 1.3rem;
+}
+
+.brand-text span {
+    color: var(--verdiss-green-light);
+    font-weight: 400;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 8px;
 }
 
 nav a {
-    color: #d1d5db;
+    color: var(--text-secondary);
     text-decoration: none;
-    transition: .25s;
+    font-size: 0.95rem;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
-    color: #4ade80;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
 }
 
+/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 120px 8% 60px;
     text-align: center;
-    padding: 0 25px;
+}
+
+.hero-content {
+    max-width: 860px;
+}
+
+.badge-fluent {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    color: var(--verdiss-green-light);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+.badge-fluent .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--verdiss-green-light);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--verdiss-green-light);
 }
 
 .hero h1 {
-    font-size: 4.8rem;
-    margin-bottom: 15px;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.hero span {
-    color: #4ade80;
+.hero h1 span {
+    background: linear-gradient(135deg, var(--verdiss-green-light) 0%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
     max-width: 720px;
-    margin: auto;
-    line-height: 1.8;
-    color: #cbd5e1;
-    font-size: 1.15rem;
+    margin: 0 auto 36px;
+    font-weight: 300;
 }
 
-.buttons {
-    margin-top: 40px;
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.button {
-    display: inline-block;
-    background: #22c55e;
-    color: white;
-    text-decoration: none;
-    padding: 15px 28px;
-    border-radius: 999px;
+.btn-fluent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
     font-weight: 600;
-    transition: .25s;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.1, 0.9, 0.2, 1);
+    cursor: pointer;
 }
 
-.button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(34,197,94,.35);
+.btn-primary {
+    background-color: var(--verdiss-green);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.btn-primary:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.3);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid var(--border-fluent);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Sections */
 section {
-    padding: 110px 8%;
+    padding: 90px 8%;
 }
 
-.title {
+.section-header {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 50px;
 }
 
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* Grid & Cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
 }
 
 .card {
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 20px;
-    padding: 30px;
-    backdrop-filter: blur(14px);
-    transition: .3s;
+    background: var(--bg-card);
+    border: 1px solid var(--border-fluent);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    backdrop-filter: blur(16px);
+    transition: all 0.3s cubic-bezier(0.1, 0.9, 0.2, 1);
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    transition: background 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    border-color: #22c55e;
+    background: var(--bg-card-hover);
+    transform: translateY(-4px);
+    border-color: var(--border-fluent-active);
+    box-shadow: var(--shadow-fluent);
+}
+
+.card:hover::before {
+    background: linear-gradient(90deg, var(--verdiss-green-light), var(--ms-blue-light));
+}
+
+.card.featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(32, 37, 45, 0.85) 100%);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.card.featured::before {
+    background: linear-gradient(90deg, var(--verdiss-green-light), var(--ms-blue-light));
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: rgba(34, 197, 94, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.card-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+}
+
+.card.featured .card-tag {
+    background: var(--verdiss-green);
+    color: #fff;
 }
 
 .card h3 {
-    color: #4ade80;
-    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
 }
 
 .card p {
-    color: #d1d5db;
-    line-height: 1.8;
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.6;
     flex-grow: 1;
+    margin-bottom: 20px;
 }
 
-.card a.project-link {
-    display: inline-block;
-    margin-top: 15px;
-    color: #4ade80;
+.app-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.chip {
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 4px 12px;
+    border-radius: 99px;
+    color: var(--text-secondary);
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--verdiss-green-light);
     text-decoration: none;
     font-weight: 600;
-    transition: 0.2s;
+    font-size: 0.95rem;
+    transition: gap 0.2s ease, color 0.2s ease;
 }
 
-.card a.project-link:hover {
-    color: #22c55e;
-    text-decoration: underline;
+.card-link:hover {
+    color: #ffffff;
+    gap: 12px;
 }
 
-.roadmap ul {
+/* Roadmap */
+.roadmap-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-fluent);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    backdrop-filter: blur(16px);
+}
+
+.roadmap-list {
     list-style: none;
-    max-width: 700px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.roadmap li {
-    padding: 16px;
-    margin: 12px 0;
-    background: rgba(255,255,255,.05);
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,.08);
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.roadmap li a {
-    color: #4ade80;
+.roadmap-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.status-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.status-done {
+    background: rgba(34, 197, 94, 0.2);
+    color: var(--verdiss-green-light);
+    border: 1px solid rgba(74, 222, 128, 0.4);
+}
+
+.status-planned {
+    background: rgba(0, 120, 212, 0.15);
+    color: var(--ms-blue-light);
+    border: 1px solid rgba(76, 194, 255, 0.3);
+}
+
+.roadmap-title {
+    font-weight: 600;
+    color: var(--text-primary);
     text-decoration: none;
 }
 
-.roadmap li a:hover {
+.roadmap-title:hover {
+    color: var(--verdiss-green-light);
     text-decoration: underline;
 }
 
+.roadmap-status-badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+.badge-done {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--verdiss-green-light);
+}
+
+.badge-planned {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 50px 20px;
-    border-top: 1px solid rgba(255,255,255,.08);
-    color: #94a3b8;
+    border-top: 1px solid var(--border-fluent);
+    background: rgba(15, 18, 23, 0.95);
+    padding: 60px 8% 40px;
+    margin-top: 60px;
 }
 
-footer h3 {
-    color: #4ade80;
-    margin-bottom: 10px;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-@media(max-width: 700px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-    nav ul {
-        display: none;
-    }
+.footer-brand h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-legal {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    nav ul { display: none; }
+    .card.featured { grid-column: span 1; }
+    .footer-content { flex-direction: column; text-align: center; }
+    .footer-legal { text-align: center; }
+}
 </style>
-
 </head>
 
 <body>
 
+<div class="ambient-glow"></div>
+<div class="grid-overlay"></div>
+
+<!-- Navigation -->
 <nav>
-    <div class="logo">🌱 VerdisS</div>
+    <a href="#" class="brand">
+        <span class="brand-icon">🌱</span>
+        <div class="brand-text">VerdisS <span>Productions</span></div>
+    </a>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -249,83 +550,203 @@ footer h3 {
     </ul>
 </nav>
 
+<!-- Hero Section -->
 <section class="hero">
-    <div>
-        <h1>Building <span>Sustainable</span> Technology.</h1>
+    <div class="hero-content">
+        <div class="badge-fluent">
+            <span class="dot"></span>
+            <span>NEW RELEASE AVAILABLE</span>
+        </div>
+        <h1>Sustainable Technology. <span>Boundless Performance.</span></h1>
         <p>
-        VerdisS Productions is an independent open-source software initiative focused on building lightweight, privacy-respecting and environmentally conscious technology.
+            VerdisS Productions is an independent open-source initiative focused on developing lightweight, private, and energy-efficient technologies.
         </p>
-        <div class="buttons">
-            <a class="button" href="#projects">Explore</a>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn-fluent btn-primary">Explore Ecosystem</a>
+            <a href="https://github.com/prilugano992-cmyk/Verdiss-Productions/releases/tag/genesis-v2.1.0" target="_blank" rel="noopener noreferrer" class="btn-fluent btn-secondary">
+                Get GenesisOS 2.1
+            </a>
         </div>
     </div>
 </section>
 
+<!-- About Section -->
 <section id="about">
-    <h2 class="title">About VerdisS</h2>
+    <div class="section-header">
+        <h2>About VerdisS</h2>
+        <p>Designing the future of computing with sustainability and transparency</p>
+    </div>
     <div class="grid">
         <div class="card">
-            <h3>🌱 Our Mission</h3>
+            <div class="card-header">
+                <div class="card-icon">🌱</div>
+                <span class="card-tag">Our Mission</span>
+            </div>
+            <h3>Sustainability & Efficiency</h3>
             <p>
-            Create software that is efficient, sustainable and accessible for everyone while respecting user privacy and reducing unnecessary resource consumption.
+                Create efficient, accessible software capable of reducing unnecessary hardware and energy resource consumption.
             </p>
         </div>
         <div class="card">
-            <h3>💚 Open Source</h3>
+            <div class="card-header">
+                <div class="card-icon">💚</div>
+                <span class="card-tag">Open Source</span>
+            </div>
+            <h3>Total Transparency</h3>
             <p>
-            VerdisS believes in transparent development. Projects are built openly so anyone can learn, contribute and help improve them.
+                Open and collaborative development. Our projects are transparent so anyone can learn, contribute, and evolve together.
             </p>
         </div>
     </div>
 </section>
 
+<!-- Projects Section -->
 <section id="projects">
-    <h2 class="title">Current Projects</h2>
+    <div class="section-header">
+        <h2>Current Projects</h2>
+        <p>Discover the solutions in development by VerdisS Productions</p>
+    </div>
     <div class="grid">
-        <div class="card">
-            <h3>🌍 EcoMap</h3>
+
+        <!-- GenesisOS 2.1 Card -->
+        <div class="card featured">
+            <div class="card-header">
+                <div class="card-icon">💻</div>
+                <span class="card-tag">Bare-Metal Operating System</span>
+            </div>
+            <h3>GenesisOS 2.1</h3>
             <p>
-            EcoMap is the first official project of the VerdisS Ecosystem. It is a collaborative platform that helps communities report, locate and monitor environmental issues, encouraging collective action for a cleaner planet.
+                32-bit bare-metal operating system built specifically for extremely old PCs that need a second life for daily use. Includes essential applications built-in and ready for direct hardware use.
             </p>
-            <a href="https://ecomap-e7268.web.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visit EcoMap ➔</a>
+            
+            <div class="app-chips">
+                <span class="chip">🧮 Calculator</span>
+                <span class="chip">🎨 Paint</span>
+                <span class="chip">🌐 Web Browser</span>
+                <span class="chip">📝 Notepad</span>
+                <span class="chip">📁 File Explorer</span>
+                <span class="chip">⚡ Bare-Metal x86 (32-bit)</span>
+            </div>
+
+            <div>
+                <a href="https://github.com/prilugano992-cmyk/Verdiss-Productions/releases/tag/genesis-v2.1.0" target="_blank" rel="noopener noreferrer" class="btn-fluent btn-primary">
+                    Download GenesisOS v2.1.0 ➔
+                </a>
+            </div>
         </div>
-        
+
+        <!-- EcoMap -->
         <div class="card">
-            <h3>🎬 Spec</h3>
+            <div class="card-header">
+                <div class="card-icon">🌍</div>
+                <span class="card-tag">Web Platform</span>
+            </div>
+            <h3>EcoMap</h3>
             <p>
-            Spec is a Modern Video Sharing Platform. Built to provide a smooth, high-performance multimedia experience while following our core principles of efficiency.
+                First official project of the VerdisS Ecosystem. A collaborative platform helping communities report, locate, and monitor environmental issues.
             </p>
-            <a href="https://spec-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Spec ➔</a>
+            <a href="https://ecomap-e7268.web.app/" target="_blank" rel="noopener noreferrer" class="card-link">
+                Access EcoMap ➔
+            </a>
         </div>
+
+        <!-- Spec -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🎬</div>
+                <span class="card-tag">Media Platform</span>
+            </div>
+            <h3>Spec</h3>
+            <p>
+                Modern video-sharing platform created to deliver a fast, high-performance multimedia experience.
+            </p>
+            <a href="https://spec-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">
+                Access Spec ➔
+            </a>
+        </div>
+
     </div>
 </section>
 
-<section id="roadmap" class="roadmap">
-    <h2 class="title">Roadmap</h2>
-    <ul>
-        <li>
-            ✅ <a href="https://ecomap-e7268.web.app/" target="_blank" rel="noopener noreferrer">
-                EcoMap
-            </a> — Available
-        </li>
-        <li>
-            ✅ <a href="https://spec-psi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                Spec - Modern Video Sharing Platform
-            </a> — Available
-        </li>
-        <li>🟢 Verdis Browser — Planned</li>
-        <li>🔎 Verdis Search — Planned</li>
-        <li>🤖 Verdis AI — Planned</li>
-        <li>☁️ Verdis Drive — Planned</li>
-    </ul>
+<!-- Roadmap Section -->
+<section id="roadmap">
+    <div class="section-header">
+        <h2>Roadmap</h2>
+        <p>Follow the official VerdisS product roadmap</p>
+    </div>
+    <div class="roadmap-container">
+        <ul class="roadmap-list">
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-done">✓</span>
+                    <a href="https://github.com/prilugano992-cmyk/Verdiss-Productions/releases/tag/genesis-v2.1.0" target="_blank" rel="noopener noreferrer" class="roadmap-title">
+                        GenesisOS 2.1 — Bare-Metal 32-bit OS
+                    </a>
+                </div>
+                <span class="roadmap-status-badge badge-done">Available</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-done">✓</span>
+                    <a href="https://ecomap-e7268.web.app/" target="_blank" rel="noopener noreferrer" class="roadmap-title">
+                        EcoMap — Collaborative Environmental Platform
+                    </a>
+                </div>
+                <span class="roadmap-status-badge badge-done">Available</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-done">✓</span>
+                    <a href="https://spec-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="roadmap-title">
+                        Spec — Modern Video Sharing Platform
+                    </a>
+                </div>
+                <span class="roadmap-status-badge badge-done">Available</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-planned">⌛</span>
+                    <span class="roadmap-title" style="color: var(--text-secondary);">Verdis Browser</span>
+                </div>
+                <span class="roadmap-status-badge badge-planned">Planned</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-planned">⌛</span>
+                    <span class="roadmap-title" style="color: var(--text-secondary);">Verdis Search</span>
+                </div>
+                <span class="roadmap-status-badge badge-planned">Planned</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-planned">⌛</span>
+                    <span class="roadmap-title" style="color: var(--text-secondary);">Verdis AI</span>
+                </div>
+                <span class="roadmap-status-badge badge-planned">Planned</span>
+            </li>
+            <li class="roadmap-item">
+                <div class="roadmap-left">
+                    <span class="status-icon status-planned">⌛</span>
+                    <span class="roadmap-title" style="color: var(--text-secondary);">Verdis Drive</span>
+                </div>
+                <span class="roadmap-status-badge badge-planned">Planned</span>
+            </li>
+        </ul>
+    </div>
 </section>
 
+<!-- Footer -->
 <footer>
-    <h3>🌱 VerdisS Productions</h3>
-    <p>Building technology for a greener future.</p>
-    <br>
-    <p>Licensed under the Apache License 2.0</p>
-    <p>© 2026 VerdisS Productions</p>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>🌱 VerdisS Productions</h3>
+            <p>Building efficient technology for a more sustainable future.</p>
+        </div>
+        <div class="footer-legal">
+            <p>Licensed under the Apache License 2.0</p>
+            <p>© 2026 VerdisS Productions</p>
+        </div>
+    </div>
 </footer>
 
 </body>
