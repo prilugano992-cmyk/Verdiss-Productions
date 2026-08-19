@@ -38,7 +38,6 @@ html {
 
 body {
     background-color: var(--bg-dark);
-    /* Gradiente sutil no topo para quebrar o preto/branco sem poluir */
     background-image: radial-gradient(circle at 50% 0%, #1a1f29 0%, var(--bg-dark) 70%);
     background-attachment: fixed;
     color: var(--text-primary);
@@ -46,7 +45,6 @@ body {
     line-height: 1.6;
 }
 
-/* Elementos de efeito ornamental removidos */
 .ambient-glow, .grid-overlay {
     display: none;
 }
