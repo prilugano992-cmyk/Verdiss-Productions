@@ -1,4 +1,4 @@
-# 🌱 VerdisS Productions
+# VerdisS Productions
 
 ![License Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
@@ -6,54 +6,62 @@
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 
-Welcome to the official repository of **VerdisS Productions**.
+Welcome to the VerdisS Productions repository.
 
-VerdisS is an independent open-source initiative focused on creating **efficient, sustainable, and privacy-respecting technology**.
+VerdisS is an independent open-source initiative focused on creating efficient, sustainable, and privacy-respecting technology.
 
 Our goal is to develop software that balances modern functionality with low resource consumption and a positive impact on users and the environment.
 
 ---
 
-## 💡 Philosophy
+## Philosophy
 
-VerdisS is guided by core principles aimed at building better software for everyone:
+VerdisS follows a set of practical principles aimed at producing useful, maintainable software:
 
-*   🌱 **Sustainability:** Create lightweight and efficient software that avoids unnecessary resource consumption.
-*   🔒 **Privacy:** Respect users by minimizing data collection and giving full control back to them.
-*   🧩 **Open Source:** Build transparently and empower the community to learn, contribute, and improve together.
-*   ⚡ **Efficiency:** Prioritize high performance, simplicity, and long-term maintainability.
-
----
-
-## 🛠️ Technologies
-
-Depending on the specific goals of each project, we utilize a versatile range of technologies:
-
-*   **Languages:** C, C++, Python, JavaScript
-*   **Web Development:** HTML5, CSS3
-*   *Other specialized tools and frameworks as required.*
+* **Sustainability:** Build lightweight, efficient software that minimizes unnecessary resource use.
+* **Privacy:** Limit data collection and give users control over their information.
+* **Open source:** Work transparently and encourage community contributions.
+* **Efficiency:** Favor simplicity, performance, and long-term maintainability.
 
 ---
 
-## 📜 License
+## Technologies
 
-This repository and its sub-projects are licensed under the **Apache License 2.0**. 
+Depending on the goals of each project, we use a range of technologies:
 
-You are free to use, modify, and distribute this software in accordance with the license terms. For detailed information, please review the [`LICENSE`](./LICENSE) file.
+* **Languages:** C, C++, Python, JavaScript
+* **Web:** HTML5, CSS3
+* Other specialized tools and frameworks as required.
 
 ---
 
-## 📬 Contact & Contributions
+## Future
 
-Contributions, feedback, and feature suggestions are always welcome! 
+We plan to grow VerdisS into a formal company. The team is currently small, so we often prioritize rapid development to move projects forward. If our pace or approach causes any problems, or if you'd like to collaborate more closely, please open an issue or contact us — we're happy to discuss alternatives and work with contributors.
 
-If you would like to help advance **VerdisS Productions**:
-1. Feel free to open an **Issue** to discuss proposed changes.
-2. Submit a **Pull Request** with your enhancements.
+---
+
+## License
+
+This repository and its sub-projects are licensed under the Apache License 2.0.
+
+You are free to use, modify, and distribute this software in accordance with the license terms. For details, see the [`LICENSE`](./LICENSE) file.
+
+---
+
+## Contact & Contributions
+
+Contributions, feedback, and ideas are welcome.
+
+To help advance VerdisS Productions:
+
+1. Open an issue to discuss proposed changes.
+2. Submit a pull request with your enhancements.
 
 ---
 
 <p align="center">
-  <b>Building technology for a greener future.</b> 🌱<br>
+  <b>Building technology for a greener future.</b>
+  <br>
   <sub>© 2026 VerdisS Productions</sub>
 </p>
