@@ -37,7 +37,7 @@ Depending on the goals of each project, we use a range of technologies:
 
 ## Future
 
-We plan to grow VerdisS into a formal company. The team is currently small, so we often prioritize rapid development to move projects forward. If our pace or approach causes any problems, or if you'd like to collaborate more closely, please open an issue or contact us — we're happy to discuss alternatives and work with contributors.
+We plan to grow VerdisS into a formal company. Right now, our team is small, so we're using AI to help us move things forward quickly. It's not ideal—we'd much rather have real human developers working alongside us. If you're interested in joining the team and helping us build the future of VerdisS, we'd love to hear from you. Get in touch and let's talk!
 
 ---
 
