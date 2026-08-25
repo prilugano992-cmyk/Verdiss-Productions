@@ -15,8 +15,6 @@ VerdisS is an independent open-source initiative focused on creating efficient, 
 
 Our goal is to develop software that balances modern functionality with low resource consumption and a positive impact on users and the environment.
 
----
-
 ## Philosophy
 
 VerdisS follows a set of practical principles aimed at producing useful, maintainable software:
@@ -26,8 +24,6 @@ VerdisS follows a set of practical principles aimed at producing useful, maintai
 * **Open source:** Work transparently and encourage community contributions.
 * **Efficiency:** Favor simplicity, performance, and long-term maintainability.
 
----
-
 ## Technologies
 
 Depending on the goals of each project, we use a range of technologies:
@@ -36,21 +32,15 @@ Depending on the goals of each project, we use a range of technologies:
 * **Web:** HTML5, CSS3
 * Other specialized tools and frameworks as required.
 
----
-
 ## Future
 
 We plan to grow VerdisS into a formal company. Right now, our team is small, so we're using AI to help us move things forward quickly. It's not ideal—we'd much rather have real human developers working alongside us. If you're interested in joining the team and helping us build the future of VerdisS, we'd love to hear from you. Get in touch and let's talk!
-
----
 
 ## License
 
 This repository and its sub-projects are licensed under the Apache License 2.0.
 
 You are free to use, modify, and distribute this software in accordance with the license terms. For details, see the [`LICENSE`](./LICENSE) file.
-
----
 
 ## Contact & Contributions
 
@@ -60,8 +50,6 @@ To help advance VerdisS Productions:
 
 1. Open an issue to discuss proposed changes.
 2. Submit a pull request with your enhancements.
-
----
 
 <p align="center">
   <b>Building technology for a greener future.</b>
