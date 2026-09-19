@@ -46,13 +46,10 @@ You are free to use, modify, and distribute this software in accordance with the
 
 Contributions, feedback, and ideas are welcome.
 
-To help advance VerdisS Productions:
-
-1. Open an issue to discuss proposed changes.
-2. Submit a pull request with your enhancements.
+To help advance VerdisS Productions, Open an issue to discuss proposed changes.
 
 <p align="center">
-  <b>Building technology for a greener future.</b>
+  <b>Building efficient technology for a more sustainable future.</b>
   <br>
   <sub>© 2026 VerdisS Productions</sub>
 </p>
