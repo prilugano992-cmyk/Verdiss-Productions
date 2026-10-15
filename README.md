@@ -34,7 +34,9 @@ Depending on the goals of each project, we use a range of technologies:
 
 ## Future
 
-We plan to grow VerdisS into a formal company one day. Right now, we are a small, completely unpaid volunteer initiative with no funding or budget. Because of this, we are currently using AI to help move things forward, but we'd much rather work with real humans. If you are passionate about our vision, want to gain experience, and are looking to join a purely volunteer-based team to help build the future of VerdisS, we’d love to hear from you. Get in touch and let's talk!
+We plan to grow VerdisS into a formal company one day. Right now, we are a small, completely unpaid volunteer initiative with no funding or budget. Because of this, we're using AI as a tool to help us develop our projects despite our limited resources. However, our long-term goal is to build a team of passionate people who can collaborate, share ideas, and help shape the future of VerdisS. 
+
+If you are passionate about our vision, want to gain experience, and are looking to join a purely volunteer-based team to help build the future of VerdisS, we’d love to hear from you. Get in touch and let's talk!
 
 ## License
 
