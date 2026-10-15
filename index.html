@@ -24,6 +24,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#volunteer">Application</a></li>
     </ul>
 </nav>
 
@@ -237,12 +238,69 @@
         </ul>
     </div>
 </section>
+
+<section id="volunteer">
+    <div class="section-header">
+        <h2>Join VerdisS</h2>
+        <p>Help us build our future.</p>
+    </div>
+
+    <form id="volunteer-form">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="role">Area of interest</label>
+        <select id="role" name="role" required>
+            <option value="">Choose an area</option>
+            <option>Development</option>
+            <option>Design</option>
+            <option>Testing</option>
+            <option>Documentation</option>
+            <option>Community</option>
+            <option>Other</option>
+        </select>
+
+        <label for="message">Tell us about yourself</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn-fluent btn-primary">
+            Apply to Volunteer
+        </button>
+    </form>
+</section>
+
+<script>
+document.getElementById("volunteer-form")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const data = new FormData(this);
+
+    const subject = encodeURIComponent(
+        "VerdisS Volunteer Application"
+    );
+
+    const body = encodeURIComponent(
+        "Name: " + data.get("name") + "\n" +
+        "Email: " + data.get("email") + "\n" +
+        "Area: " + data.get("role") + "\n\n" +
+        "About me:\n" + data.get("message")
+    );
+
+    window.location.href =
+        "mailto:verdisscontact@gmail.com?subject=" + subject +
+        "&body=" + body;
+});
+</script>
     
 <footer>
     <div class="footer-content">
 
         <div class="footer-brand">
-            <h3 style="font-size: 1rem; color: #888;">🌱 VerdisS Productions</h3>
+            <h3 style="font-size: 1rem; color: #888;">VerdisS Productions</h3>
             <p style="font-size: 0.8rem; color: #777;">Building efficient technology for a more sustainable future.</p>
         </div>
         
