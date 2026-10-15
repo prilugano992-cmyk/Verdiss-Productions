@@ -246,67 +246,110 @@
     </div>
 
     <form id="volunteer-form">
-        <label for="name">Your name</label>
-        <input id="name" name="name" required>
+        <label for="volunteer-name">Your name</label>
+        <input
+            id="volunteer-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Enter your name"
+            required
+        >
 
-        <label for="email">Your email</label>
-        <input id="email" name="email" type="email" required>
+        <label for="volunteer-email">Your email</label>
+        <input
+            id="volunteer-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+        >
 
-        <label for="role">Area of interest</label>
-        <select id="role" name="role" required>
+        <label for="volunteer-role">Area of interest</label>
+        <select id="volunteer-role" name="role" required>
             <option value="">Choose an area</option>
-            <option>Development</option>
-            <option>Design</option>
-            <option>Testing</option>
-            <option>Documentation</option>
-            <option>Community</option>
-            <option>Other</option>
+            <option value="Development">Development</option>
+            <option value="Design">Design</option>
+            <option value="Testing">Testing</option>
+            <option value="Documentation">Documentation</option>
+            <option value="Community">Community</option>
+            <option value="Other">Other</option>
         </select>
 
-        <label for="message">Tell us about yourself</label>
-        <textarea id="message" name="message" required></textarea>
+        <label for="volunteer-message">Tell us about yourself</label>
+        <textarea
+            id="volunteer-message"
+            name="message"
+            placeholder="Your skills, interests, and how you'd like to contribute..."
+            required
+        ></textarea>
 
         <button type="submit" class="btn-fluent btn-primary">
             Apply to Volunteer
         </button>
+
+        <p id="volunteer-status" role="status" aria-live="polite"></p>
     </form>
 </section>
 
 <script>
-document.getElementById("volunteer-form")
-.addEventListener("submit", function(event) {
-    event.preventDefault();
+(() => {
+    const form = document.getElementById("volunteer-form");
+    const status = document.getElementById("volunteer-status");
 
-    const data = new FormData(this);
+    if (!form || !status) return;
 
-    const subject = encodeURIComponent(
-        "VerdisS Volunteer Application"
-    );
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-    const body = encodeURIComponent(
-        "Name: " + data.get("name") + "\n" +
-        "Email: " + data.get("email") + "\n" +
-        "Area: " + data.get("role") + "\n\n" +
-        "About me:\n" + data.get("message")
-    );
+        if (!form.reportValidity()) return;
 
-    window.location.href =
-        "mailto:verdisscontact@gmail.com?subject=" + subject +
-        "&body=" + body;
-});
+        const data = new FormData(form);
+
+        const name = data.get("name").trim();
+        const email = data.get("email").trim();
+        const role = data.get("role");
+        const message = data.get("message").trim();
+
+        const subject = encodeURIComponent(
+            "VerdisS Volunteer Application"
+        );
+
+        const body = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n` +
+            `Area of interest: ${role}\n\n` +
+            `About me:\n${message}`
+        );
+
+        status.textContent =
+            "Your email app should open with your application ready to send.";
+
+        window.location.href =
+            `mailto:verdisscontact@gmail.com?subject=${subject}&body=${body}`;
+    });
+})();
 </script>
-    
+
 <footer>
     <div class="footer-content">
-
         <div class="footer-brand">
-            <h3 style="font-size: 1rem; color: #888;">VerdisS Productions</h3>
-            <p style="font-size: 0.8rem; color: #777;">Building efficient technology for a more sustainable future.</p>
+            <h3 style="font-size: 1rem; color: #888;">
+                VerdisS Productions
+            </h3>
+            <p style="font-size: 0.8rem; color: #777;">
+                Building efficient technology for a more sustainable future.
+            </p>
         </div>
-        
+
         <div class="footer-legal">
-            <p style="font-size: 0.8rem; color: #777;">Licensed under the Apache License 2.0</p>
-            <p style="font-size: 0.75rem; color: #666;">© 2026 VerdisS Productions</p>
+            <p style="font-size: 0.8rem; color: #777;">
+                Licensed under the Apache License 2.0
+            </p>
+            <p style="font-size: 0.75rem; color: #666;">
+                © 2026 VerdisS Productions
+            </p>
         </div>
     </div>
 </footer>
