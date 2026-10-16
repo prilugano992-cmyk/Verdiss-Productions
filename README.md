@@ -1,72 +1,93 @@
-# <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/a74c80db-8d82-4055-a748-6c7679434b5a" />
-
-
-
+# <img width="350" height="200" alt="VerdisS Productions" src="https://github.com/user-attachments/assets/a74c80db-8d82-4055-a748-6c7679434b5a" />
 
 ![License Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 
-Welcome to the VerdisS Productions repository.
+VerdisS Productions is an independent open-source initiative developing lightweight, privacy-respecting, and resource-efficient software.
 
-VerdisS is an independent open-source initiative focused on creating efficient, sustainable, and privacy-respecting technology.
+Our goal is to provide useful technology that balances modern functionality with simplicity, sustainability, and respect for user privacy. We welcome open-source enthusiasts, developers, and anyone interested in efficient software.
 
-Our goal is to develop software that balances modern functionality with low resource consumption and a positive impact on users and the environment.
+## Projects
+
+VerdisS develops different tools and applications, each with its own purpose and technologies.
+
+Visit our [official website](https://prilugano992-cmyk.github.io/Verdiss-Productions/#projects) to explore our projects and their current status.
+
+
+### Gallery
+
+<p align="center">
+  <img src="https://ik.imagekit.io/qf8n1zuq9b/Captura%20de%20tela%202026-10-16%20083725.png" width="48%" alt="Verdis Navis browser" />
+  <img src="https://ik.imagekit.io/qf8n1zuq9b/Captura%20de%20tela%202026-10-16%20083738.png" width="48%" alt="Verdis Search interface" />
+</p>
+
+<p align="center">
+  <img src="https://ik.imagekit.io/qf8n1zuq9b/Captura%20de%20tela%202026-10-16%20083804.png" width="48%" alt="Spec video-sharing platform" />
+  <img src="https://private-user-images.githubusercontent.com/229633983/629310504-e1f28834-2104-47d3-9e47-78deda2e94cf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIxNTA5OTksIm5iZiI6MTc5MjE1MDY5OSwicGF0aCI6Ii8yMjk2MzM5ODMvNjI5MzEwNTA0LWUxZjI4ODM0LTIxMDQtNDdkMy05ZTQ3LTc4ZGVkYTJlOTRjZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNlQxMTM4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNmQwMzA3NjUxNWJlZThjYjdmNWJmYjBlMmQwMjI3Yjg0OTg4ODljNmI0ZjQ3ZTE1NmQ5YWI5ZDE0OTU0OTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.h0lTO9oWWb7Dp_fZw5DfUKVE0pSodcyyosMd5fuhEEY" width="48%" alt="GenesisOS" />
+</p>
+
+<p align="center">
+  <em>A look at VerdisS Productions projects.</em>
+</p>
+
 
 ## Philosophy
 
-VerdisS follows a set of practical principles aimed at producing useful, maintainable software:
-
-* **Sustainability:** Build lightweight, efficient software that minimizes unnecessary resource use.
-* **Privacy:** Limit data collection and give users control over their information.
-* **Open source:** Work transparently and encourage community contributions.
-* **Efficiency:** Favor simplicity, performance, and long-term maintainability.
+- **Sustainability:** Minimize unnecessary resource consumption through lightweight, efficient software.
+- **Privacy:** Limit data collection and respect users' control over their information.
+- **Open source:** Develop transparently and welcome community contributions.
+- **Efficiency:** Prioritize simplicity, performance, and maintainability.
 
 ## Technologies
 
-Depending on the goals of each project, we use a range of technologies:
+Our projects use different technologies depending on their requirements, including:
 
-* **Languages:** C, C++, Python, JavaScript
-* **Web:** HTML5, CSS3
-* Other specialized tools and frameworks as required.
+- **Languages:** C, C++, Python, and JavaScript.
+- **Web technologies:** HTML5 and CSS3.
+- **Other tools and frameworks:** Selected according to each project's needs.
+
+Check the individual project repositories for their specific technology stacks and requirements.
+
+## Getting Started
+
+Getting started with VerdisS projects depends on the type of software.
+
+- **Web-based projects:** Open the project's website using the link provided in our [official website](https://prilugano992-cmyk.github.io/Verdiss-Productions/).
+- **Executable downloads:** For non-web-based projects, you can download the provided `.exe` file and run it independently, without needing to download the source code. Some projects may instead provide an `.iso` image, depending on their purpose.
+- **Source code:** If you prefer to explore or modify the code, download the source code archive and extract it to a folder on your computer. Check the project's release for any additional requirements or instructions.
+
+Available downloads and installation methods vary by project. Visit the relevant release page to find the appropriate files and instructions.
 
 ## Future
 
-Our long-term goal is to grow VerdisS Productions into a formal company and build a team capable of developing and maintaining accessible, efficient, privacy-focused, and sustainable software. For now, however, VerdisS is a small, entirely volunteer-run initiative with no funding, budget, or paid positions.
+We hope to grow VerdisS Productions into a formal company someday. Currently, we are a volunteer-run initiative with no funding or paid positions. We use AI as a development tool to help build and improve our projects with limited resources.
 
-Given our limited resources, we use AI as a development tool to help us work more efficiently and bring our ideas to life. We believe that, with the right people and a collaborative approach, we can continue improving our projects while learning from one another and exploring new ideas.
+We welcome people who share our vision and want to contribute their skills and ideas. If you're interested, apply through our [volunteer application form](https://prilugano992-cmyk.github.io/Verdiss-Productions/#volunteer).
 
-We welcome people who share our vision, want to gain practical experience, and are willing to contribute their skills and ideas. Whether you are a developer, designer, tester, writer, or someone interested in community management, there may be a place for you on our team.
+All positions are currently unpaid, with no guarantee of future employment or compensation.
 
-If you would like to help shape the future of VerdisS Productions, we encourage you to apply through the volunteer application form on this website. Applications are reviewed based on the applicant's interests, skills, and the areas where they would like to contribute. Please note that volunteering is currently unpaid, and participation does not guarantee future employment or compensation.
+## Contact & Contributions
 
-### Contact & Contributions
+You can contribute by applying through our [volunteer application form](https://prilugano992-cmyk.github.io/Verdiss-Productions/#volunteer) or by opening an issue in the relevant repository to report a bug, suggest a feature, or discuss an improvement.
 
-There are several ways to contribute to VerdisS Productions. If you want to become part of the team, please use the **volunteer application form here: https://prilugano992-cmyk.github.io/Verdiss-Productions/#volunteer**. 
-Select the area that best matches your interests and use the *About me* field to describe your experience, skills, ideas, and how you would like to contribute.
+Volunteer areas include:
 
-The available areas are:
+- **Development:** Programming, including frontend, backend, or both.
+- **Design:** Creating logos, icons, interface elements, and other visual assets.
+- **Testing:** Testing software and websites, identifying bugs, and reporting problems.
+- **Documentation:** Improving repositories, preparing release information, and suggesting project improvements.
+- **Community:** Managing contact emails, communicating with users, and promoting projects.
+- **Other:** Contributing skills or ideas that don't fit the categories above.
 
-- **Development:** Primarily software development and programming. You can specify in the *About me* field whether you are interested in frontend development, backend development, or both. You may also describe the programming languages, frameworks, and technologies you are familiar with.
-- **Design:** Creating and improving visual assets, including logos, icons, interface elements, and other graphics used across VerdisS projects. You can also share your experience with UI/UX design, visual consistency, and accessibility.
-- **Testing:** Testing VerdisS websites and software to identify bugs, broken features, usability problems, and other issues. Testers can report reproducible steps, describe expected and actual behavior, and suggest improvements.
-- **Documentation:** Helping maintain project repositories and prepare or improve release information, such as release notes and descriptions. Contributors in this area can also suggest improvements to repository organization, documentation, workflows, and project structure.
-- **Community:** Helping manage the contact email, communicate with users and contributors, and promote VerdisS Productions and its projects. This may include sharing announcements, helping people find information, and supporting community engagement.
-- **Other:** If your skills or interests do not fit the categories above, select *Other* and explain your ideas or the kind of contribution you would like to make.
+You don't need to be an expert. Describe your skills, interests, and what you'd like to learn in the application form's *About me* field.
 
-You do not need to be an expert to apply. Please be honest about your current experience, mention what you would like to learn, and explain how you could help. Suggestions and new ideas are welcome, and we encourage applicants to describe specific projects or improvements they would like to work on.
-
-If you are interested in contributing to a specific project, you can also explore its repository and **open an issue** to discuss a proposed change, report a problem, or suggest an improvement. Issues are useful for discussing ideas before work begins, while the volunteer application form is the recommended starting point for people who want to join the team.
-
-All contributions are currently voluntary and unpaid. VerdisS Productions has no funding or budget at this stage, so we cannot offer salaries or guarantee compensation. We appreciate every person who is willing to share their time, skills, feedback, and ideas to help our projects grow.
+All contributions are voluntary and unpaid. We appreciate everyone who helps VerdisS grow.
 
 ## License
 
-This repository and its sub-projects are licensed under the Apache License 2.0.
-
-You are free to use, modify, and distribute this software in accordance with the license terms. For details, see the [`LICENSE`](./LICENSE) file.
+This repository and its sub-projects are licensed under the Apache License 2.0, subject to the terms applicable to each project. You are free to use, modify, and distribute the software under the license terms. See the [`LICENSE`](./LICENSE) file for details.
 
 <p align="center">
   <b>Building efficient technology for a more sustainable future.</b>
