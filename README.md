@@ -70,21 +70,18 @@ All positions are currently unpaid, with no guarantee of future employment or co
 
 ## Contact & Contributions
 
-You can contribute by applying through our [volunteer application form](https://prilugano992-cmyk.github.io/Verdiss-Productions/#volunteer) or by opening an issue in the relevant repository to report a bug, suggest a feature, or discuss an improvement.
+Contributions, bug reports, feature requests, and suggestions are welcome!
 
-Volunteer areas include:
+- **Issues:** Open an issue in this repository to report bugs, suggest features, ask questions, or discuss improvements to VerdisS Productions and its projects.
+- **Pull Requests:** Submit a pull request to propose code changes, documentation updates, design improvements, or other contributions to this repository.
+- **Email:** For general inquiries, collaboration proposals, or other matters, contact us at [verdisscontact@gmail.com](mailto:verdisscontact@gmail.com).
+- **Volunteer Applications:** Interested in joining the team? Apply through our [volunteer application form](https://prilugano992-cmyk.github.io/Verdiss-Productions/#volunteer).
 
-- **Development:** Programming, including frontend, backend, or both.
-- **Design:** Creating logos, icons, interface elements, and other visual assets.
-- **Testing:** Testing software and websites, identifying bugs, and reporting problems.
-- **Documentation:** Improving repositories, preparing release information, and suggesting project improvements.
-- **Community:** Managing contact emails, communicating with users, and promoting projects.
-- **Other:** Contributing skills or ideas that don't fit the categories above.
+When opening an issue or submitting a pull request, clearly describe your proposal, the project it relates to, and any relevant details. For bug reports, include steps to reproduce the problem whenever possible.
 
-You don't need to be an expert. Describe your skills, interests, and what you'd like to learn in the application form's *About me* field.
+You don't need to be an expert to contribute. Whether you're interested in development, design, testing, documentation, or community support, your ideas and skills are welcome.
 
-All contributions are voluntary and unpaid. We appreciate everyone who helps VerdisS grow.
-
+All contributions and volunteer positions are currently unpaid. Thank you for helping VerdisS Productions grow!
 ## License
 
 This repository and its sub-projects are licensed under the Apache License 2.0, subject to the terms applicable to each project. You are free to use, modify, and distribute the software under the license terms. See the [`LICENSE`](./LICENSE) file for details.
