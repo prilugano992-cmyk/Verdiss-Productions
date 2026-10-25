@@ -25,7 +25,6 @@ Visit our [official website](https://prilugano992-cmyk.github.io/Verdiss-Product
 
 <p align="center">
   <img src="https://ik.imagekit.io/qf8n1zuq9b/Captura%20de%20tela%202026-10-16%20083804.png" width="48%" alt="Spec video-sharing platform" />
-  <img src="https://private-user-images.githubusercontent.com/229633983/629310504-e1f28834-2104-47d3-9e47-78deda2e94cf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIxNTA5OTksIm5iZiI6MTc5MjE1MDY5OSwicGF0aCI6Ii8yMjk2MzM5ODMvNjI5MzEwNTA0LWUxZjI4ODM0LTIxMDQtNDdkMy05ZTQ3LTc4ZGVkYTJlOTRjZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNlQxMTM4MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNmQwMzA3NjUxNWJlZThjYjdmNWJmYjBlMmQwMjI3Yjg0OTg4ODljNmI0ZjQ3ZTE1NmQ5YWI5ZDE0OTU0OTkwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.h0lTO9oWWb7Dp_fZw5DfUKVE0pSodcyyosMd5fuhEEY" width="48%" alt="GenesisOS" />
 </p>
 
 <p align="center">
